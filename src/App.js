@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 import { FiSettings } from 'react-icons/fi';
@@ -16,7 +16,20 @@ import "./App.css";
 const App = () => {
 
     const { activeMenu, themeSettings, setThemeSettings, 
-        currentColor, currentMode } = useStateContext();
+        currentColor, setCurrentColor, currentMode, setCurrentMode } = useStateContext();
+
+    useEffect(() => {
+        const themeMode = localStorage.getItem('themeMode');
+        if (themeMode) {
+            setCurrentMode(themeMode)
+        }
+        const colorMode = localStorage.getItem('colorMode');
+        if (colorMode) {
+            setCurrentColor(colorMode)
+        }
+
+
+    }, [])
 
     return (
         <div className={currentMode === 'Dark' ? 'dark' : ''}>
