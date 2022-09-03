@@ -9,7 +9,6 @@ import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { links } from "../data/dummy";
 
 import { useStateContext } from "../contexts/ContextProvider"
-import { useState } from 'react';
 
 //Close menu button md:hidden on line 31
 const Sidebar = () => {

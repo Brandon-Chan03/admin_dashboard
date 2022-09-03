@@ -27,7 +27,7 @@ const Ecommerce = () => {
                 <div className="mt-6">
                     <Button color='white'
                     bgColor={currentColor}
-                    text="Downlood"
+                    text="Download"
                     borderRadius="10px"
                     size="md" />
                 </div>
