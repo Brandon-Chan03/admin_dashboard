@@ -37,7 +37,7 @@ const Sidebar = () => {
                 <button type="button" onClick={() => setActiveMenu(
                     (prevActiveMenu) => !prevActiveMenu)} 
                     className="text-xl rounded-full
-                p-3 dark:text-white dark:hover:bg-light-gray dark:hover:text-slate-900 mt-4 block ">
+                p-3 hover:bg-gray-200 dark:text-white dark:hover:bg-light-gray dark:hover:text-slate-900 mt-4 block ">
                     <MdOutlineCancel />
                 </button>
             </TooltipComponent>
